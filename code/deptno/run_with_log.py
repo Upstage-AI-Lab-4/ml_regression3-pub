@@ -63,7 +63,7 @@ def run():
     print(f"Best RMSE: {best_rmse}")
 
     # 최적 모델의 예측값을 CSV 파일로 저장
-    pd.DataFrame(best_preds, columns=['predictions']).to_csv(best_pred_file, index=False)
+    pd.DataFrame(best_preds.astype(int), columns=['predictions']).to_csv(best_pred_file, index=False)
 
     # RMSE와 Random State를 텍스트 파일로 저장
     with open(result_file, 'w') as f:
@@ -107,7 +107,7 @@ def objective(trial):
     rmse = mean_squared_error(y_val, preds, squared=False)
 
     # 각 시도의 예측값과 RMSE를 기록
-    all_predictions[f'trial_{trial.number}_preds'] = preds
+    all_predictions[f'trial_{trial.number}_preds'] = preds.astype(int)
 
     return rmse
 
