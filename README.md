@@ -29,6 +29,36 @@
 ### Directory
 
 - _Insert your directory structure_
+```sh 
+.
+├── Pipfile
+├── Pipfile.lock
+├── README.md
+├── code # ipynb
+│   ├── XGBoost.ipynb
+│   ├── baseline_code.ipynb
+│   ├── baseline_code_LGBM.ipynb
+│   ├── deptno
+│   │   ├── load_log_model.py
+│   │   ├── run.py
+│   │   ├── run_with_log.py
+│   │   ├── train-vs-test-xy.ipynb
+│   │   └── train-vs-test.ipynb
+│   ├── deptno.ipynb
+│   └── requirements.txt
+└── data # 원본 데이터, 및 전처리를 거진 데이터
+    ├── X_test_6.csv
+    ├── X_train.5.2.csv
+    ├── bus_feature.csv
+    ├── sample_submission.csv
+    ├── selected_xy.csv
+    ├── subway_feature.csv
+    ├── test.csv
+    ├── test_xy.csv
+    ├── train.csv
+    ├── train_xy.csv
+    └── y_train.5.2.csv
+```
 
 e.g.
 ```
