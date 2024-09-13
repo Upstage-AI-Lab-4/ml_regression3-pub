@@ -34,19 +34,19 @@
 ├── Pipfile
 ├── Pipfile.lock
 ├── README.md
-├── code # ipynb
+├── code                            # ipynb
 │   ├── XGBoost.ipynb
 │   ├── baseline_code.ipynb
 │   ├── baseline_code_LGBM.ipynb
-│   ├── deptno
-│   │   ├── load_log_model.py
-│   │   ├── run.py
-│   │   ├── run_with_log.py
+│   ├── deptno                            
+│   │   ├── load_log_model.py       # 저장된 pkl 로 모델을 불러와 test.csv 로 부터 예측
+│   │   ├── run.py                  # optuna 를 통해 LGBRegressor 하이퍼 파라메터를 찾고 가장 좋은 모델, 파라메터를 기록
+│   │   ├── run_with_log.py         # 모델 학습시 target 에  log scale 을 적용한다
 │   │   ├── train-vs-test-xy.ipynb
 │   │   └── train-vs-test.ipynb
 │   ├── deptno.ipynb
 │   └── requirements.txt
-└── data # 원본 데이터, 및 전처리를 거진 데이터
+└── data                            # 원본 데이터, 및 전처리를 거진 데이터
     ├── X_test_6.csv
     ├── X_train.5.2.csv
     ├── bus_feature.csv
@@ -58,22 +58,6 @@
     ├── train.csv
     ├── train_xy.csv
     └── y_train.5.2.csv
-```
-
-e.g.
-```
-├── code
-│   ├── jupyter_notebooks
-│   │   └── model_train.ipynb
-│   └── train.py
-├── docs
-│   ├── pdf
-│   │   └── (Template) [패스트캠퍼스] Upstage AI Lab 1기_그룹 스터디 .pptx
-│   └── paper
-└── input
-    └── data
-        ├── eval
-        └── train
 ```
 
 ## 3. Data descrption
