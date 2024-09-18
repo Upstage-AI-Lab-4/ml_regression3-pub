@@ -135,7 +135,7 @@ early_stopping_rounds를 50 으로 설정함
 
 ### Modeling Process
 
-- [유의미해 보이는 feature importances]
+[유의미해 보이는 feature importances]
 강남여부
 1인당 GDP (gdp_per_capita_thousand_krw) -> 단위: 천원
 전용면적, 평
